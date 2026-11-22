@@ -6,7 +6,7 @@ Separates high-level task planning from step-by-step action and tool execution i
   
 In this case the __executor__ calls the __planning__ __agent__ directly and outside of it's registry of agents to choose from.  It sets the model to use as a task list is returned from planning.  The [AISuite](https://github.com/andrewyng/aisuite) is a lightweight open-source Python library by Andrew Ng that provides a unified interface for calling multiple generative AI and LLM providers—rather than training deep learning models from scratch. This can be replaced as portable usage depending on the Agent Platform.
 
-![workflow](./ResearchAgent/workflow.PNG)
+![workflow](./Executor/ResearchAgent/workflow.PNG)
 ## 1. Executor sends topic to Planning Agent
 Planning agent recieves the topic and uses a specific model with a defined user prompt to provide additional context including model temperature to the LLM about the targeted research workflow for multiple agents, which is returned as a list of tasks.
 
