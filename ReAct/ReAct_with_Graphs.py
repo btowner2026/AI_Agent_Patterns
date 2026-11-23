@@ -168,6 +168,6 @@ def print_stream(stream):
         else:
             message.pretty_print()
 
-inputs = {"messages": [HumanMessage(content="What's the weather like in Zurich, and what should I wear based on the temperature?")]}
+inputs = {"messages": [HumanMessage(content="What's the weather like in Newark, and what should I wear based on the temperature?")]}
 
 print_stream(graph.stream(inputs, stream_mode="values"))
