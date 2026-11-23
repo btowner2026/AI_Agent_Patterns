@@ -24,3 +24,5 @@ Each agent is provided the context of what has been done it the previous step an
 * Tool list can be expanded by modifying the research tools option or integrating an MCP server tool list.
 * Planning agent can be modified / included in the agent registry if workflow is updated for re-planning based on reflection critics
 * Context window size management, token management and error handling would be required to be added to this example.
+
+[Common Failures in Production Environments](./executor-pattern-production-failures.md)
