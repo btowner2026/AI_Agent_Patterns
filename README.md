@@ -1,11 +1,11 @@
 # Agent Patterns
-AI agent design patterns are reusable architectures for structuring how single or multiple agents reason, use tools, coordinate tasks, and maintain reliability in production workflows
+AI agent design patterns are reusable architectures for structuring how single or multiple agents reason, use tools, coordinate tasks, and maintain reliability in production workflows.  Choose the right pattern based on the task, complexity and risk.  Patterns can be combined (see Executor example). Good tool design, clear prompts and evalution improve reliability.  Lists of production failures are included and contains what works in practice.
 
 ## [Executor](./Executor)  
 Separates high-level task planning from step-by-step action and tool execution in AI agents. Instead of one model reasoning and acting in an ad-hoc loop at every step, a planner breaks a goal into tasks and an executor carries out the individual actions.  
 
 ## [Router](./Router)  
-Uses choice probabilities or scores to route simple requests to smaller, faster models and complex tasksto frontier models. Dynamically delegate incoming tasks to specialized domain agents based on intent or confidence thresholds. Score candidate documents or passages to rank relevance before passing context to an agent.
+Uses choice probabilities or scores to route simple requests to smaller, faster models and complex tasks to frontier models. Dynamically delegate incoming tasks to specialized domain agents based on intent or confidence thresholds. Score candidate documents or passages to rank relevance before passing context to an agent.
  
 ## [ReAct (Reason and Act)](./ReAct)
 Alternates chain-of-thought reasoning with external tool calls in a continuous loop until a task is finished. The LLM analyzes the goal, current state, and previous results to decide what to do next. The agent selects a tool (such as web search, a database query, code execution, or an API) and provides input arguments. The system runs the tool and feeds the returned output back into the LLM's context window.  The loop continues step by step until the model has enough information to return a final answer.
