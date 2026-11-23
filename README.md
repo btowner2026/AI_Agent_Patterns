@@ -13,8 +13,12 @@ Alternates chain-of-thought reasoning with external tool calls in a continuous l
 Best used when tasks are open-ended or multi-step and the exact sequence of actions depends on intermediate tool outputs.
 
 ## [Multiple-Agent](./MultipleAgent)
+A coordinator agent delegates tasks to specialized worker agents.  Tasks can be divided and handled in
+parallel by specialized agents.  Includes the use of sub-agents.
 
 ## [Human in the loop](./HitL)
+Include human review or approval at key points.  Used when high-stakes tasks, Compliance, Safty or 
+Subjective judgement are involved.
 
   
 ## [Reinforcement learning (RL)](./RL-Agents) 
