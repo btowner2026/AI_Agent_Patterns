@@ -218,7 +218,7 @@ def executor_agent(topic, model: str = "openai:gpt-4o", limit_steps: bool = True
     history = []
 
     print("==================================")
-    print("🎯 Editor Agent")
+    print("🎯 Executor Agent")
     print("==================================")
 
     for i, step in enumerate(plan_steps):
