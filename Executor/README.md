@@ -3,6 +3,8 @@ A system design pattern that separates high-level task planning from low-level a
 
 ## Executor Pattern
 Separates high-level task planning from step-by-step action and tool execution in AI agents. Instead of one model reasoning and acting in an ad-hoc loop at every step, a planner breaks a goal into tasks and an executor carries out the individual actions.  
+
+* Provided example combines **Plan and Execute** + **Orchestrator - Worker** + **Evaluator - Optimizer** patterns.
   
 In this case the __executor__ calls the __planning__ __agent__ directly and outside of it's registry of agents to choose from.  It sets the model to use as a task list is returned from planning.  The [AISuite](https://github.com/andrewyng/aisuite) is a lightweight open-source Python library by Andrew Ng that provides a unified interface for calling multiple generative AI and LLM providers—rather than training deep learning models from scratch. This can be replaced as portable usage depending on the Agent Platform.
 
