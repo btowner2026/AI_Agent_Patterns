@@ -36,3 +36,5 @@ That's two full loops. The model could request both tools at once, but it can't 
   - `tool` is imported twice (`langchain_core.tools` and `langchain.tools`). Keep only the first.
   - `json.dumps` on a string result adds extra quotes.
   - The API key placeholder is hard-coded. Load it from the environment instead.
+  
+[Common Failures in Production Environments](./react-pattern-production-failures.md)
