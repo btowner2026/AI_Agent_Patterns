@@ -4,7 +4,7 @@ This document maps each activity of the human-in-the-loop (HITL) pattern to the 
 
 The agent is still a ReAct-style loop (reason → act → observe). The difference is that the **Act** step is replaced by an **approval gate**: the graph saves its state, stops, hands the proposed action to a person, and continues only once it gets their answer.
 
-![Activity](./hilt_activity.png)
+![Activity](./hilt_activity2.png)
 
 **Legend:** Reason = model thinking · Human gate = pause and decision · Act / Reject = what goes back to the model as the observation · Control flow = entry, routing, and exit.
 
